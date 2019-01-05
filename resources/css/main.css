@@ -1,0 +1,4 @@
+/* Hide "Artikalpaket" badge */
+.bg-info {
+  display: none !important;
+}
