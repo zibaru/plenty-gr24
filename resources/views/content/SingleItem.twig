@@ -179,7 +179,14 @@
                                       <td>${ property.property.names.name}</td>
                                       <td>${ property.texts.value}</td>
                                     </tr>
-
+                                    <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 13"> <!--  ZOLL -->
+                                      <td>${ property.property.names.name}</td>
+                                      <td>${ property.texts.value}</td>
+                                    </tr>
+                                    <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11"> <!--  REIFENBREITE -->
+                                      <td>${ property.property.names.name}</td>
+                                      <td>${ property.texts.value}</td>
+                                    </tr>
 
                                     <!-- FELGENMERKMALE -->
                                     <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 19"> <!--  ZOLL -->
