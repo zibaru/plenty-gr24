@@ -185,7 +185,11 @@
                                     </tr>
                                     <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11"> <!--  REIFENBREITE -->
                                       <td>${ property.property.names.name}</td>
-                                      <td>${ property.valueInt.value}</td> <!--integer-->
+                                      <td>${ property.valueInt}</td> <!--integer-->
+                                    </tr>
+                                    <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 12"> <!--  REIFENHOEHE -->
+                                      <td>${ property.property.names.name}</td>
+                                      <td>${ property.texts.value}</td>
                                     </tr>
 
 
